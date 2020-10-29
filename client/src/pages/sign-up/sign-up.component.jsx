@@ -17,6 +17,10 @@ const SignUp = () => {
         confirmPassword: ''
     })
 
+    const handleChange = event => {
+        
+    }
+
     const handleSubmit = event => {
         event.preventDefault();
         console.log('yes')
