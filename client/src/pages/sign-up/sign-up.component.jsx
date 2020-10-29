@@ -28,7 +28,7 @@ const SignUp = () => {
     const handleSubmit = event => {
         event.preventDefault();
 
-        axios.post('http://localhost:3001/signup', formData)
+        axios.post('/api/signup', formData)
         .then(res => console.log(res))
         .catch(err => console.log('err'));
     }
