@@ -12,6 +12,7 @@ const mongoConnect = callback => {
             console.log('db connected');
             //Assign mongo database to _db variable
             _db = client.db();
+            //Run call back passed as arg. In this case it just starts server (app.js)
             callback();
         })
         .catch(err => {
