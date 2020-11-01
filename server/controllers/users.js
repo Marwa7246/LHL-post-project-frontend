@@ -1,5 +1,11 @@
-exports.signUp = (req, res, next)=> {
-    console.log('route hit');
-    console.log(req.body);
+const User = require('../models/user');
+
+
+exports.signUp = async (req, res, next)=> {
+    const { email, password } = req.body;
+
+    const user = new User();
+    const savedUser = await user.save();
+
     res.status(200).json({msg: 'success'})
 }
