@@ -13,6 +13,7 @@ const Nav = () => (
         </div>
         <div className="userOptions">
             <Link to='/signup' className="option">Sign Up</Link>
+            <Link to='/login' className="option">Login</Link>
             <div className="option">Sign Out</div>
         </div>
     </div>
